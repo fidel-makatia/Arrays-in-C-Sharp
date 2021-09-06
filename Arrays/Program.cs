@@ -21,12 +21,16 @@ namespace Arrays
             Console.WriteLine("Entered values");
 
 
-            for (int i = 0; i < arr.Length; i++)
+            foreach(int i in arr)
             {
-                Console.WriteLine("Value; " + i + " is\t" + arr[i]);
+                Console.WriteLine("Value; \t" + i );
             }
 
+           int n= Array.IndexOf(arr, 4,2);// searching values in leaner seach
 
+            int p = Array.BinarySearch(arr, 4);// requires a sorted array
+
+            Console.WriteLine("Value is at  \t" +n);
 
         }
     }
