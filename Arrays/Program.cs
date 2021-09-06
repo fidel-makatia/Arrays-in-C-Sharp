@@ -1,5 +1,7 @@
 ﻿using System;
 
+using ClassLibrary1;
+
 namespace Arrays
 {
     class Program
@@ -64,7 +66,24 @@ namespace Arrays
                 Console.WriteLine(item);
             }
 
+            //jagged arrays
 
+            int[][] Arr_= new int[5][];
+
+            Arr_[0] = new int[6];
+
+            // Multi dimensional arrays
+
+            int[,] rr = new int[3,9];
+            //Array of Objects
+
+            Employee emp = new Employee() { name = "FIFI", age = 34, ID = 1 };
+            Employee emp1 = new Employee() { name = "FII", age = 32, ID = 2 };
+            Employee emp2 = new Employee() { name = "FIFIzo", age = 12, ID = 3 };
+
+            // array
+
+            Employee[] employees = new Employee[] { emp, emp1, emp2 };
 
         }
     }
