@@ -30,7 +30,41 @@ namespace Arrays
 
             int p = Array.BinarySearch(arr, 4);// requires a sorted array
 
-            Console.WriteLine("Value is at  \t" +n);
+            Array.Sort(arr);// sort in ascending order
+
+            Console.WriteLine("Value is at  \t" +p);
+
+            Array.Clear(arr, 3, 2);  //set to zero
+            Array.Resize(ref arr, 7);//resize
+
+            foreach(var item in arr)
+            {
+                Console.WriteLine(item);
+            }
+
+            Array.Reverse(arr); //reverse order
+
+            foreach (var item in arr)
+            {
+                Console.WriteLine(item);
+            }
+
+            // index from end operator
+
+/*            int[] results = arr[^0];
+
+            Console.WriteLine(results);
+*/
+            //range operator
+
+            int[] results2 = arr[2..5];
+
+            foreach(var item in results2)
+            {
+                Console.WriteLine(item);
+            }
+
+
 
         }
     }
